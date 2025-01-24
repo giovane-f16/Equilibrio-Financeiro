@@ -17,6 +17,35 @@
     </section>
 
     <section id="destaques">
-        <h2>Posts mais recentes</h2>
+        <div>
+            <h2>Destaques</h2>
+            <div class="posts">
+                {% for destaque in destaques %}
+                <div class="post">
+                    <a href="{{ destaque.url }}">
+                        <img src="{{ destaque.imagem }}" alt="destaque.titulo" title="destaque.titulo">
+                        <h3>{{ destaque.titulo }}</h3>
+                        <p>{{ destaque.resumo }}</p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="marca">
+        <div>
+            <div>
+                <img src="{{ path_views }}/img/placeholder.png" alt="" title="">
+            </div>
+            <div>
+                <h4>Mais sobre a nossa marca</h4>
+                <p>           
+                    Bem-vindo ao nosso espaço de finanças, onde descomplicamos o mundo financeiro para você. Nossa missão é oferecer informações claras e
+                    acessíveis, ajudando você a tomar as melhores decisões para sua vida financeira. Aqui, você encontra conteúdos sobre educação financeira,
+                </p>
+                <a href="/saiba-mais/">Saiba mais</a>
+            </div>
+        </div>
     </section>
 </main>

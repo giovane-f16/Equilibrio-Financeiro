@@ -1,6 +1,6 @@
 <?php
 
-namespace Fcl\Models;
+namespace EquilibrioFinanceiro\Models;
 
 use \DateTime;
 use EquilibrioFinanceiro\Controllers\AbstractController;
@@ -58,7 +58,7 @@ class Post extends AbstractController
             return $this->imagem;
         }
 
-        $this->imagem = "{$this->path_views}/imagens/placeholder.webp";
+        $this->imagem = $this->placeholder;
 
         $thumbnail_id = get_post_thumbnail_id($this->getId());
         if (!$thumbnail_id) {
