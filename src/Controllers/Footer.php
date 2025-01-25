@@ -17,6 +17,7 @@ class Footer extends AbstractController
 
     public function enqueueStyles($versao): void
     {
+        // toDo - Minify CSS
         wp_enqueue_style("footer-css", "{$this->path_views}/css/src/footer.css", [], $versao);
         $this->enqueueStylesComum($versao);
     }

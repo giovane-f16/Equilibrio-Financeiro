@@ -18,6 +18,7 @@ class FrontPage extends AbstractController
 
     public function enqueueStyles($versao): void
     {
+        // toDo - Minify CSS
         wp_enqueue_style("front-page-css", "{$this->path_views}/css/src/front-page.css", [], $versao);
         $this->enqueueStylesComum($versao);
     }
