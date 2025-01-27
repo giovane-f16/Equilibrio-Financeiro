@@ -17,8 +17,7 @@ class Post extends AbstractController
 
     public function enqueueStyles($versao): void
     {
-        // toDo - Minify CSS
-        wp_enqueue_style("post-css", "{$this->path_views}/css/src/post.css", [], $versao);
+        wp_enqueue_style("post-css", "{$this->path_views}/css/dist/post.min.css", [], $versao);
         $this->enqueueStylesComum($versao);
     }
 

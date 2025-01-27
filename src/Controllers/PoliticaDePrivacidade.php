@@ -17,8 +17,7 @@ class PoliticaDePrivacidade extends AbstractController
 
     public function enqueueStyles($versao): void
     {
-        // toDo - Minify CSS
-        wp_enqueue_style("politica-de-privacidade-css", "{$this->path_views}/css/src/politica-de-privacidade.css", [], $versao);
+        wp_enqueue_style("politica-de-privacidade-css", "{$this->path_views}/css/dist/politica-de-privacidade.min.css", [], $versao);
         $this->enqueueStylesComum($versao);
     }
 
