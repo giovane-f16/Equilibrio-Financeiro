@@ -45,10 +45,14 @@
     border-radius: 90px;
 }
 
-#introducao>div div:first-child a:hover,
-#marca>div div a:hover {
+#introducao>div div:first-child a:hover {
     color: #000;
     background-color: #dad9d9;
+}
+
+#marca>div div a:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 #destaques {
