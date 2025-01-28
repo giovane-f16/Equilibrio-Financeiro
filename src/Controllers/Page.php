@@ -5,7 +5,7 @@ namespace EquilibrioFinanceiro\Controllers;
 use Twig\Environment as Twig;
 use EquilibrioFinanceiro\Controllers\AbstractController;
 
-class PoliticaDePrivacidade extends AbstractController
+class Page extends AbstractController
 {
     private object $post_model;
 
@@ -17,7 +17,7 @@ class PoliticaDePrivacidade extends AbstractController
 
     public function enqueueStyles($versao): void
     {
-        wp_enqueue_style("politica-de-privacidade-css", "{$this->path_views}/css/dist/politica-de-privacidade.min.css", [], $versao);
+        wp_enqueue_style("page-css", "{$this->path_views}/css/dist/page.min.css", [], $versao);
         $this->enqueueStylesComum($versao);
     }
 
@@ -28,7 +28,7 @@ class PoliticaDePrivacidade extends AbstractController
 
     public function render(): void
     {
-        echo $this->twig->render("politica-de-privacidade.html", [
+        echo $this->twig->render("page.html", [
             "path_views" => $this->path_views,
             "post"       => $this->post_model
         ]);
