@@ -49,3 +49,22 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media (max-width: 768px) {
+    .artigos .artigo {
+        flex-direction: column;
+    }
+
+    .artigos .artigo>a {
+        margin-right: 0;
+    }
+
+    .artigos .artigo>div {
+        width: 100%;
+    }
+
+    .artigos .artigo p {
+        width: 100%;
+        -webkit-line-clamp: 5;
+    }
+}

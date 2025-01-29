@@ -37,7 +37,7 @@ class Post
         }
 
         $posts = get_posts([
-            "numberposts" => 10
+            "numberposts" => -1
         ]);
 
         if (!$posts) {
