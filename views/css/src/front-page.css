@@ -135,3 +135,80 @@
     line-height: 30px;
     text-align: justify;
 }
+
+@media (max-width: 768px) {
+    #introducao>div {
+        flex-direction: column;
+        margin: 20px auto 10px auto;
+    }
+
+    #introducao>div div {
+        width: 100%;
+    }
+
+    #introducao>div div:nth-of-type(2) img {
+        display: none;
+    }
+
+    #introducao>div h1 {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    #introducao>div p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #introducao>div div:first-child a,
+    #marca>div div a {
+        margin: 0 auto;
+        width: 200px;
+        height: 50px;
+    }
+
+    #destaques>div {
+        margin: 0 auto;
+    }
+
+    #destaques h2 {
+        font-size: 34px;
+    }
+
+    #destaques .posts {
+        flex-direction: column;
+    }
+
+    #destaques .post {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #destaques .post img {
+        height: 300px;
+    }
+
+    #destaques .post a p {
+        -webkit-line-clamp: 5;
+    }
+
+    #marca>div {
+        flex-direction: column;
+    }
+
+    #marca>div div {
+        width: 100%;
+    }
+
+    #marca>div div:first-child img {
+        display: none;
+    }
+
+    #marca>div h4 {
+        font-size: 32px;
+    }
+
+    #marca>div div p {
+        margin-bottom: 50px;
+    }
+}
